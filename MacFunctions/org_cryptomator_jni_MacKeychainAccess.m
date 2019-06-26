@@ -9,7 +9,13 @@
 #import "org_cryptomator_jni_MacKeychainAccess.h"
 #import <Security/Security.h>
 
-static const char CRYPTOMATOR[] = "Cryptomator";
+/* ###_VIRTUALSAFE_CHANGE_TRACKING_START_###
+U2FsdGVkX18Zd5bJqvsI1QKDZRAR5BOHmYVS6urtgf8w9XU1Ryy6WR79Pz7DILqN
+hmAg51MnItw1hGH30iLbh49w846IDqYTfp9CMj35WXnwCmowTj4JWIsphb1adFCx
+SwSXFpKG+HSATaz91qAsq+ASFrFFQc6zQsB/3xyW2F2KxXeo3PDWXr99Z5XXezcL
+WCOiAglIKy0+soir5e+sGw==
+###_VIRTUALSAFE_CHANGE_TRACKING_END_### */
+static const char CRYPTOMATOR[] = "VirtualSAFE";
 
 JNIEXPORT jint JNICALL Java_org_cryptomator_jni_MacKeychainAccess_storePassword0(JNIEnv *env, jobject thisObj, jbyteArray key, jbyteArray password) {
 	const int keyLen = (*env)->GetArrayLength(env, key);
